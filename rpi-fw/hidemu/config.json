@@ -1,0 +1,44 @@
+{
+    "MQTT": {
+        "addr" : "10.42.0.1",
+        "port" : 1883,
+        "login" : "opsy",
+        "password" : "123"
+    },
+    "Shelf": [
+        {
+            "name" : "IMX8-MEK",
+			"screen" : {
+				"xsize" : 1024,
+				"ysize" : 768
+			},
+			"remote" : {
+				"X0" : 234,
+				"Y0" : 12,
+				"X1" : 555,
+				"Y1" : 200
+            }
+        },
+        {
+            "name" : "Salvator",
+            "screen" : {
+                "xsize" : 800,
+                "ysize" : 600
+            }
+        }
+    ],
+    "HID": [
+		{
+			"name" : "IMX8-MEK",
+			"device" : "rpi1",
+			"topic" : "/aaa/bbb/1",
+			"port" : 38
+		},
+        {
+			"name" : "Salvator",
+			"device" : "rpi1",
+			"topic" : "/aaa/ccc/1",
+			"port" : 40
+        }
+    ]
+}
